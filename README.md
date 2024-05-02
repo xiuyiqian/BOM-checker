@@ -1,5 +1,5 @@
 # Project Name
-BOM-Chekcer
+BOM-Checker
 ## Overview
 This repository includes 3D CAD part files, primarily in `.sldprt` format, which are integral to our design process.
 
