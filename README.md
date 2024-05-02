@@ -14,5 +14,14 @@ Each `.sldprt` file in the Bill of Materials (BOM) includes a SHA256 hash. This 
 2. **Compare the Hash:** Check the newly calculated hash against the hash listed in the BOM. If they match, the file has not been altered in an unintended manner.
 3. **Update the BOM:** If intentional changes are made to a `.sldprt` file, update the corresponding hash in the BOM to reflect these changes.
 
+### Tool Description 
+compare the actual part files ( *.sldprt files) in the folder to the BOM and detect following types of errors.
+• Modification of part files (SHA256 hash inconsistent with what is recorded in the BOM)
+• Missing part files ( *.sldprt file specified in the BOM but missing from the 
+folder)
+• Unidentified part files ( *.sldprt file present in the folder but missing from the BOM)
+• Duplication of part files (multiple *.sldprt files with the same name in different 
+folders)
+
 ## Conclusion
 This method ensures that all changes to our design files are intentional and verified, maintaining the integrity and reliability of our design process.
